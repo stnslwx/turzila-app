@@ -9,10 +9,8 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .frame(width: 450)
             Text("Hello, world!")
-            Spacer()
         }
         .padding(.horizontal)
-        .background(Color("universalPurple")).ignoresSafeArea(.all, edges: .all)
     }
 }
 
