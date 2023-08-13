@@ -3,12 +3,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            Spacer()
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundColor(.accentColor)
+                .foregroundColor(.white)
+                .frame(width: 450)
             Text("Hello, world!")
+            Spacer()
         }
-        .padding()
+        .padding(.horizontal)
+        .background(Color("universalPurple")).ignoresSafeArea(.all, edges: .all)
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3ECDCD2A88F4B9002BF8B2 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3ECDCC2A88F4B9002BF8B2 /* SplashScreenView.swift */; };
 		DAAE5D162A876D4000BD0F09 /* TurzilaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE5D152A876D4000BD0F09 /* TurzilaApp.swift */; };
 		DAAE5D182A876D4000BD0F09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE5D172A876D4000BD0F09 /* ContentView.swift */; };
 		DAAE5D1A2A876D4100BD0F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAE5D192A876D4100BD0F09 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3ECDCC2A88F4B9002BF8B2 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		DAAE5D122A876D4000BD0F09 /* Turzila.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turzila.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAE5D152A876D4000BD0F09 /* TurzilaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurzilaApp.swift; sourceTree = "<group>"; };
 		DAAE5D172A876D4000BD0F09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3ECDCA2A87AFCA002BF8B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA3ECDCC2A88F4B9002BF8B2 /* SplashScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA3ECDCB2A87B016002BF8B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DAAE5D092A876D4000BD0F09 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +68,11 @@
 		DAAE5D142A876D4000BD0F09 /* Turzila */ = {
 			isa = PBXGroup;
 			children = (
+				DAAE5D192A876D4100BD0F09 /* Assets.xcassets */,
 				DAAE5D152A876D4000BD0F09 /* TurzilaApp.swift */,
 				DAAE5D172A876D4000BD0F09 /* ContentView.swift */,
-				DAAE5D192A876D4100BD0F09 /* Assets.xcassets */,
+				DA3ECDCA2A87AFCA002BF8B2 /* Views */,
+				DA3ECDCB2A87B016002BF8B2 /* Models */,
 				DAAE5D1B2A876D4100BD0F09 /* Preview Content */,
 			);
 			path = Turzila;
@@ -139,6 +158,7 @@
 			files = (
 				DAAE5D182A876D4000BD0F09 /* ContentView.swift in Sources */,
 				DAAE5D162A876D4000BD0F09 /* TurzilaApp.swift in Sources */,
+				DA3ECDCD2A88F4B9002BF8B2 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +297,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +332,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
