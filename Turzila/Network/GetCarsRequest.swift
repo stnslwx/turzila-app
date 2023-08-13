@@ -4,7 +4,7 @@ final class CarViewModel: ObservableObject {
     @Published var cars: [Car] = []
     
     func getCars(){
-        let carURL = ""
+        let carURL = "https://turzila.com/api/car/all"
         
         if let url = URL(string: carURL) {
             URLSession.shared.dataTask(with: url){[weak self] data, response, error in

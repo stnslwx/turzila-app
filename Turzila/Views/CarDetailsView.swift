@@ -2,6 +2,8 @@ import SwiftUI
 
 struct CarDetailsView: View {
     
+    let car: Car
+    
     let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 0, alignment: nil),
         GridItem(.flexible(), spacing: 0, alignment: nil),
@@ -9,7 +11,7 @@ struct CarDetailsView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack(alignment: .center){
+            VStack(alignment: .leading){
                 
                 Image("car")
                     .resizable()
@@ -17,7 +19,7 @@ struct CarDetailsView: View {
                     .frame(height: 200)
                     .cornerRadius(10)
                 
-                Text("RENO SPORT")
+                Text("\(car.name)")
                     .font(.system(.title, design: .default, weight: .regular))
                     .padding(.horizontal, 10)
                 
@@ -57,7 +59,7 @@ struct CarDetailsView: View {
                     HStack{
                         Text("Стоимость суток:")
                             .font(.title3)
-                        Text("0 $")
+                        Text("\(car.price) $")
                             .font(.title2)
                             .foregroundColor(Color("universalGreen"))
                     }.padding(.top, 10)
@@ -65,7 +67,7 @@ struct CarDetailsView: View {
                 
                 Spacer()
             }
-        }
+        } 
     }
 }
 
@@ -97,6 +99,6 @@ struct Option: View {
 
 struct CarDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        CarDetailsView()
+        CarDetailsView(car: Car(id: 1, name: "VEHICLE NAME", price: 0, profit: 0))
     }
 }

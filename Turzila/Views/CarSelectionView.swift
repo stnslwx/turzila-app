@@ -3,10 +3,12 @@ import SwiftUI
 struct CarSelectionView: View {
     @StateObject private var vm = CarViewModel()
     var body: some View {
-        ScrollView {
-            VStack(spacing: 30) {
-                ForEach(vm.cars, id: \.id) {car in
-                        SelectionItem(carId:car.id, carName: car.name, carPrice: car.price)
+        NavigationView {
+            ScrollView {
+                VStack(spacing: 30) {
+                    ForEach(vm.cars, id: \.id) {car in
+                        SelectionItem(carId:car.id, carName: car.name, carPrice: car.price, car: car)
+                    }
                 }
             }
         }
@@ -18,6 +20,7 @@ struct SelectionItem: View {
     let carId: Int
     let carName: String
     let carPrice: Int
+    let car: Car
     var body: some View {
         VStack{
             Image("car")
@@ -53,8 +56,8 @@ struct SelectionItem: View {
             }
             .padding(.horizontal, 40)
             .padding(.vertical, 10)
-            Button {
-                print(carName)
+            NavigationLink {
+                CarDetailsView(car: car)
             } label: {
                 Text("ПОДРОБНЕЕ")
                     .font(.system(size: 18, weight: .bold, design: .default))
@@ -67,6 +70,9 @@ struct SelectionItem: View {
         .background(Color("universalGray"))
         .cornerRadius(10)
         .padding(.horizontal,10)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
+        .navigationBarTitle("назад")
     }
 }
 
