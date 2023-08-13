@@ -99,6 +99,6 @@ struct Option: View {
 
 struct CarDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        CarDetailsView(car: Car(id: 1, name: "VEHICLE NAME", price: 0, profit: 0))
+        CarDetailsView(car: Car(id: 1, name: "VEHICLE NAME", price: 0, profit: 0, year: 2000, transmission: 0, engine: 0))
     }
 }
