@@ -13,9 +13,6 @@ struct SplashScreenView: View {
                     Image("SplashScreenIcon")
                         .resizable()
                         .frame(width: 100, height: 100)
-                    Text("Turzila")
-                        .font(.system(.title, design: .default, weight: .bold))
-                        .foregroundColor(Color("universalPurple"))
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
