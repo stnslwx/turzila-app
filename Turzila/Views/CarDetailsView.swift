@@ -25,9 +25,9 @@ struct CarDetailsView: View {
                 
                 LazyVGrid(columns: columns) {
                     Option(name: "Лимит", value: "250 км", imageName: "speedometer")
-                    Option(name: "Топливо", value: "Дизель", imageName: "fuelpump.fill")
-                    Option(name: "Трансмиссия", value: "ручная", imageName: "gearshape.fill")
-                    Option(name: "год выпуска", value: "2017", imageName: "calendar")
+                    Option(name: "Топливо", value: car.engine == 0 ? "дизель" : "бензин", imageName: "fuelpump.fill")
+                    Option(name: "Трансмиссия", value: car.transmission == 0 ? "ручная" : "автомат", imageName: "gearshape.fill")
+                    Option(name: "год выпуска", value: "\(car.year)", imageName: "calendar")
                 }
                 .frame(maxWidth: 360)
                 .padding(.vertical, 10)

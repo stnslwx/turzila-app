@@ -45,11 +45,13 @@ struct SelectionItem: View {
                 HStack{
                     VStack(alignment: .leading){
                         CarInfoItem(image: "speedometer", imageWidth: 25, imageHeight: 25, text: "250км")
-                        CarInfoItem(image: "gearshape", imageWidth: 25, imageHeight: 25, text: "ручная")
+                        CarInfoItem(image: "gearshape", imageWidth: 25, imageHeight: 25,
+                                    text: car.transmission == 0 ? "ручная" : "автомат")
                     }
                     Spacer()
                     VStack(alignment: .leading){
-                        CarInfoItem(image: "fuelpump", imageWidth: 20, imageHeight: 20, text: "дизель")
+                        CarInfoItem(image: "fuelpump", imageWidth: 20, imageHeight: 20,
+                                    text: car.engine == 0 ? "дизель" : "бензин")
                         CarInfoItem(image: "calendar", imageWidth: 20, imageHeight: 20, text: "от 1 суток")
                     }
                 }
