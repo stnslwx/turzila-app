@@ -13,6 +13,8 @@
 		DAAE5D1A2A876D4100BD0F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAE5D192A876D4100BD0F09 /* Assets.xcassets */; };
 		DAAE5D1D2A876D4100BD0F09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAE5D1C2A876D4100BD0F09 /* Preview Assets.xcassets */; };
 		DAF15AA92A890AF900E21896 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AA82A890AF900E21896 /* CarModel.swift */; };
+		DAF15AAC2A890C0900E21896 /* GetCarsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AAB2A890C0900E21896 /* GetCarsRequest.swift */; };
+		DAF15AAE2A8911C100E21896 /* CarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AAD2A8911C100E21896 /* CarSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		DAAE5D192A876D4100BD0F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAE5D1C2A876D4100BD0F09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAF15AA82A890AF900E21896 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		DAF15AAB2A890C0900E21896 /* GetCarsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCarsRequest.swift; sourceTree = "<group>"; };
+		DAF15AAD2A8911C100E21896 /* CarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				DA3ECDCC2A88F4B9002BF8B2 /* SplashScreenView.swift */,
+				DAF15AAD2A8911C100E21896 /* CarSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 				DAAE5D192A876D4100BD0F09 /* Assets.xcassets */,
 				DAAE5D152A876D4000BD0F09 /* TurzilaApp.swift */,
 				DAAE5D172A876D4000BD0F09 /* ContentView.swift */,
+				DAF15AAA2A890BC700E21896 /* Network */,
 				DA3ECDCA2A87AFCA002BF8B2 /* Views */,
 				DA3ECDCB2A87B016002BF8B2 /* Models */,
 				DAAE5D1B2A876D4100BD0F09 /* Preview Content */,
@@ -87,6 +93,14 @@
 				DAAE5D1C2A876D4100BD0F09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAF15AAA2A890BC700E21896 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DAF15AAB2A890C0900E21896 /* GetCarsRequest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF15AA92A890AF900E21896 /* CarModel.swift in Sources */,
+				DAF15AAC2A890C0900E21896 /* GetCarsRequest.swift in Sources */,
 				DAAE5D182A876D4000BD0F09 /* ContentView.swift in Sources */,
 				DAAE5D162A876D4000BD0F09 /* TurzilaApp.swift in Sources */,
+				DAF15AAE2A8911C100E21896 /* CarSelectionView.swift in Sources */,
 				DA3ECDCD2A88F4B9002BF8B2 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
