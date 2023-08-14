@@ -16,6 +16,7 @@
 		DAF15AAC2A890C0900E21896 /* GetCarsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AAB2A890C0900E21896 /* GetCarsRequest.swift */; };
 		DAF15AAE2A8911C100E21896 /* CarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AAD2A8911C100E21896 /* CarSelectionView.swift */; };
 		DAF15AB02A89248000E21896 /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AAF2A89248000E21896 /* CarDetailsView.swift */; };
+		DAF15AB22A8AC2B800E21896 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF15AB12A8AC2B800E21896 /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DAF15AAB2A890C0900E21896 /* GetCarsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCarsRequest.swift; sourceTree = "<group>"; };
 		DAF15AAD2A8911C100E21896 /* CarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectionView.swift; sourceTree = "<group>"; };
 		DAF15AAF2A89248000E21896 /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
+		DAF15AB12A8AC2B800E21896 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 				DA3ECDCC2A88F4B9002BF8B2 /* SplashScreenView.swift */,
 				DAF15AAD2A8911C100E21896 /* CarSelectionView.swift */,
 				DAF15AAF2A89248000E21896 /* CarDetailsView.swift */,
+				DAF15AB12A8AC2B800E21896 /* CalculatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				DAF15AAC2A890C0900E21896 /* GetCarsRequest.swift in Sources */,
 				DAAE5D182A876D4000BD0F09 /* ContentView.swift in Sources */,
 				DAAE5D162A876D4000BD0F09 /* TurzilaApp.swift in Sources */,
+				DAF15AB22A8AC2B800E21896 /* CalculatorView.swift in Sources */,
 				DAF15AAE2A8911C100E21896 /* CarSelectionView.swift in Sources */,
 				DA3ECDCD2A88F4B9002BF8B2 /* SplashScreenView.swift in Sources */,
 				DAF15AB02A89248000E21896 /* CarDetailsView.swift in Sources */,
