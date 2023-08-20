@@ -24,10 +24,10 @@ struct CarDetailsView: View {
                     .padding(.horizontal, 10)
                 
                 LazyVGrid(columns: columns) {
-                    Option(name: "Лимит", value: "250 км", imageName: "speedometer")
-                    Option(name: "Топливо", value: car.engine == 0 ? "дизель" : "бензин", imageName: "fuelpump.fill")
-                    Option(name: "Трансмиссия", value: car.transmission == 0 ? "ручная" : "автомат", imageName: "gearshape.fill")
-                    Option(name: "год выпуска", value: "\(car.year)", imageName: "calendar")
+                    Option(name: "Лимит", value: "250 км", imageName: "speedometer", imageColor: .blue)
+                    Option(name: "Топливо", value: car.engine == 0 ? "дизель" : "бензин", imageName: "fuelpump.fill", imageColor: Color("universalGreen"))
+                    Option(name: "Трансмиссия", value: car.transmission == 0 ? "ручная" : "автомат", imageName: "gearshape.fill", imageColor: Color("universalPurple"))
+                    Option(name: "год выпуска", value: "\(car.year)", imageName: "calendar", imageColor: .orange)
                 }
                 .frame(maxWidth: 360)
                 .padding(.vertical, 10)
@@ -36,8 +36,8 @@ struct CarDetailsView: View {
                     .padding(.horizontal, 10)
                 
                 LazyVGrid(columns: columns) {
-                    Option(name: "КАСКО", value: "БЕСПЛАТНО", imageName: "list.bullet.circle")
-                    Option(name: "Доставка", value: "БЕСПЛАТНО", imageName: "list.bullet.circle")
+                    Option(name: "КАСКО", value: "БЕСПЛАТНО", imageName: "checkmark.seal.fill", imageColor: Color("universalGreen"))
+                    Option(name: "Доставка", value: "БЕСПЛАТНО", imageName: "checkmark.seal.fill", imageColor: Color("universalGreen"))
                 }
                 .frame(maxWidth: 360)
                 .padding(.vertical, 10)
@@ -76,13 +76,14 @@ struct Option: View {
     let name: String
     let value: String
     let imageName: String
+    let imageColor: Color
     
     var body: some View {
         VStack(alignment: .leading){
             Image(systemName: "\(imageName)")
                 .resizable()
                 .frame(width: 30, height: 30)
-                .foregroundColor(.gray)
+                .foregroundColor(imageColor)
             Text("\(name):")
                 .foregroundColor(Color.gray)
             Text("\(value)")

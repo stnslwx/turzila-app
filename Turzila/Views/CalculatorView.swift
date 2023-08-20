@@ -25,7 +25,7 @@ struct CalculatorView: View {
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(20)
-                    .frame(height: 200)
+                    .frame(maxHeight: 200)
                     .shadow(radius: 10)
                 
                 Text("FORD MUSTANG")
@@ -44,7 +44,7 @@ struct CalculatorView: View {
                 TimeSelectionCheckBoxes(dayTime: true, nightTime: false)
                 
                 VStack{
-                    CustomTextField(text: $phoneNumber, label: "Номер телефона", placeholder: "", keyboardType: .namePhonePad)
+                    CustomTextField(text: $phoneNumber, label: "Номер телефона", placeholder: "", keyboardType: .numberPad)
                     CustomTextField(text: $email, label: "Электронная почта", placeholder: "Электронная почта", keyboardType: .emailAddress)
                     CustomTextField(text: $address, label: "Адрес", placeholder: "Адрес доставки или название Отеля", keyboardType: .namePhonePad)
                     CustomTextField(text: $fullName, label: "Фамилия и имя", placeholder: "Имя Фамилия на латинице", keyboardType: .emailAddress)
@@ -77,7 +77,7 @@ struct CalculatorView: View {
                 .padding(.vertical, 20)
                 .padding(.horizontal, 30)
             }
-            .padding()
+            .padding(.horizontal)
         }
     }
 }
